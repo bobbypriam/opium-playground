@@ -7,7 +7,7 @@ My playground of exploring [Opium](https://github.com/rgrinberg/opium), a (Sinat
 Tested in OCaml 4.04.2.
 
 ```bash
-$ opam install ocp-indent merlin jbuilder opium
+$ opam install jbuilder opium
 $ jbuilder build hello_world.exe
 $ _build/default/hello_world.exe
 ```
