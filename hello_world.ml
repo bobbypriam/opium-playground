@@ -17,10 +17,10 @@ let hello_route = get "/hello/:name" hello_handler
 
 let person_handler req =
   let person = {
-      name = param req "name";
-      age = "age" |> param req |> int_of_string
-    } in
-    `Json (person |> json_of_person) |> respond'
+    name = param req "name";
+    age = "age" |> param req |> int_of_string
+  } in
+  `Json (person |> json_of_person) |> respond'
 
 let person_route = get "/person/:name/:age" person_handler
 
